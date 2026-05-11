@@ -18,13 +18,13 @@ Log in with performance_glitch_user and reset the App State. Then filter by name
 Solved using Postman and Newman for the following test cases:
 
 **Q3**  
-Login with registered credentials and capture `authToken`.
+Login with registered credentials and capture authToken.
 
 **Q4**  
-GET user by `userId` and verify name and email match.
+GET user by userId and verify name and email match.
 
 **Q5**  
-PUT updated profile and verify the `updatedAt` timestamp.
+PUT updated profile and verify the updatedAt timestamp.
 
 **Q6**  
 PATCH a single field and verify only that field changed.
@@ -80,8 +80,9 @@ npm run all
 After running any test, open the HTML report to view the result.
 
 ## How to Run Postman Collection with Newman
+##current directory must be at Assignment_module_15
 
-Run the collection using this command(current directory must be at Assignment_module_15):
+Run the collection using this command:
 
 ```bash
 newman run "Assignment module 15.postman_collection.json"
