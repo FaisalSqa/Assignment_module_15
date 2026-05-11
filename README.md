@@ -2,36 +2,34 @@
 
 This repository contains automated test solutions for Assignment Module 15. It includes UI automation with Playwright and API automation with Postman and Newman.
 
-## Project Overview
-
 ### UI Automation
 Solved using Playwright for the following test cases:
 
-**Q1 [Mark 10]**  
-Try logging in with `locked_out_user` and verify the error message.
+**Q1**  
+Try logging in with locked_out_user and verify the error message.
 
-**Q2 [Mark 20]**  
-Log in with `standard_user`. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page and verify the product name and total price. Finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
+**Q2**  
+Log in with standard_user. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page and verify the product name and total price. Finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
 
-**Q3 [Mark 10]**  
-Log in with `performance_glitch_user` and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
+**Q3**  
+Log in with performance_glitch_user and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
 
 ### API Automation
 Solved using Postman and Newman for the following test cases:
 
-**Q3 [Mark 10]**  
+**Q3**  
 Login with registered credentials and capture `authToken`.
 
-**Q4 [Mark 10]**  
+**Q4**  
 GET user by `userId` and verify name and email match.
 
-**Q5 [Mark 10]**  
+**Q5**  
 PUT updated profile and verify the `updatedAt` timestamp.
 
-**Q6 [Mark 10]**  
+**Q6**  
 PATCH a single field and verify only that field changed.
 
-**Q8 [Mark 20]**  
+**Q8**  
 Execute bad requests using stored data and assert 4xx errors.
 
 ## Tech Stack
@@ -83,7 +81,7 @@ After running any test, open the HTML report to view the result.
 
 ## How to Run Postman Collection with Newman
 
-Run the collection using this command:
+Run the collection using this command(current directory must be at Assignment_module_15):
 
 ```bash
 newman run "Assignment module 15.postman_collection.json"
