@@ -80,7 +80,7 @@ npm run all
 After running any test, open the HTML report to view the result.
 
 ## How to Run Postman Collection with Newman
-##current directory must be at Assignment_module_15
+**current directory must be at Assignment_module_15**
 
 Run the collection using this command:
 
